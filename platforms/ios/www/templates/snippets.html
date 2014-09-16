@@ -1,0 +1,51 @@
+  
+<!-- VERTICAL VOTING STYLE -->
+
+  <div class="list card" ng-repeat="message in messages | reverse">
+      
+              <div  class="item item-body">
+                <div class="row">
+
+
+                        <div class="col">
+                    <a class="tab-item " href="#">
+          <i class="icon ion-thumbsup"></i>
+          
+        </a>
+        <a class="tab-item assertive " href="#">
+          43
+        </a>
+<a class="tab-item" href="#">
+          <i class="icon ion-thumbsdown"></i>
+        </a>
+                  </div>
+
+
+
+                  <div class="col col-80 " >
+                    {{message.text }}
+                     <p class='subdued' am-time-ago='{{message.timeago }}'>{{message.timeago }}</p>
+                  </div>
+
+            
+                            </div>
+
+              </div>
+         
+
+<div class="item tabs tabs-secondary tabs-icon-left">
+    <a class="tab-item" href="#">
+      <i class="icon ion-thumbsup"></i>
+      Like
+    </a>
+  
+    <a class="tab-item" href="#" am-time-ago='{{message.timeago }}'>{{message.timeago }}
+     
+    </a>
+  </div>
+
+		 
+
+		</div>
+
+

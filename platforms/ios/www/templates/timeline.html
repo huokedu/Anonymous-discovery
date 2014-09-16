@@ -1,0 +1,88 @@
+<ion-header-bar align-title="center" class='bar-assertive'>
+          <div class="buttons">
+            <button ng-click="toggleLeftSideMenu()" class="button button-icon button-clear button-light  icon ion-navicon-round "></button>
+          </div>
+          <h1 class="title light">Tat</h1>
+          <div class="buttons">
+            <a href="#/app/submit" class="button button-clear button-light button-icon icon ion-compose"></a>
+          </div>
+</ion-header-bar>
+
+
+
+<ion-content class=''>
+        <!-- pull to refresh -->
+        <ion-refresher
+          pulling-icon="ion-arrow-down-c"
+          refreshing-icon="ion-loading-a"
+          on-refresh="doRefresh()">
+        </ion-refresher>
+
+        
+        
+              
+		  <div class="list card" ng-repeat="message in messages | reverse">
+      
+              <div  class="item item-body">
+         
+
+                  
+   <div class="row">
+
+
+                        <div class="col">
+                    <a class="tab-item " href="#">
+          <i class="icon ion-thumbsup"></i>
+          
+        </a>
+        <a class="tab-item assertive has-badge">
+        <strong>51</strong>
+        
+    
+        </a>
+<a class="tab-item" href="#">
+          <i class="icon ion-thumbsdown"></i>
+        </a>
+                  </div>
+
+                  <div class="col col-80 " >
+                    {{message.text }}
+                  </div>
+
+                            </div>
+                  
+
+            
+                            
+
+              </div>
+         
+
+<div class="item tabs tabs-secondary tabs-icon-left">
+
+    <a class="tab-item assertive icon ion-clock" href="#" am-time-ago='{{message.timestamp }}'>  {{message.timestamp }}
+    </a>
+</div>
+
+		 
+
+		</div>
+
+</ion-content>
+
+
+
+
+
+<!-- footer container -->
+
+    <div class="tabs tabs-stable">
+      <a class="tab-item assertive active" href="#">
+      
+        NEW
+      </a>
+
+      <a class="tab-item assertive  " href="#">
+        HOT
+      </a>
+  </div>

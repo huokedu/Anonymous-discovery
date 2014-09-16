@@ -1,0 +1,55 @@
+/* Empty. Add your own CSS if you like */
+
+/*.pane, .view{
+	background:url('../img/bkg-4.jpg');
+	background-repeat: no-repeat;
+
+}*/
+
+
+/*
+	Timeline styling
+*/
+
+
+/*
+.my_gradient{
+
+	background:rgba(0,0,0,0.5);
+
+	color: white;
+}
+
+.my_gradientT{
+
+	background:rgba(0,0,0,0.8);
+
+	color: white;
+}
+.item{
+
+	
+background:rgba(0,0,0,0.5);
+	color: white;
+}
+.card{
+	background: none;
+}*/
+
+
+	.item{
+		font-size: 12px;
+		padding: 0;
+		font-weight: bold;
+		
+	}
+
+	.col{
+  padding:0;
+}
+
+.lol{
+	/*display: table-cell;*/
+	vertical-align: middle;
+	 text-align: center;
+}
